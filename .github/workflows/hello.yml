@@ -1,9 +1,9 @@
-name: Variables                      
+name: Naming                 
 on: push                          
 jobs:                             
-  print:                          
-    runs-on: ubuntu-latest       
-    env:  
-      USERNAME: ${{ vars.USERNAME }}                     
+  print:
+    name: Super Useful Job                          
+    runs-on: ubuntu-latest                       
     steps:
-      - run: echo "${USERNAME}"
+      - name: Amazing Script
+        run: echo "Hello"
